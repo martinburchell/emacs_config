@@ -89,6 +89,13 @@
 
 (global-set-key "\M-g" 'goto-line)
 
+(defun split-horizontally-for-temp-buffers ()
+       "Split the window horizontally for temp buffers."
+       (when (and (one-window-p t)
+     	     (not (active-minibuffer-window)))
+         (split-window-horizontally)))    
+
+
 (setq show-paren-mode t)
 
 (require 'flymake)
