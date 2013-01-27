@@ -119,3 +119,13 @@
 
 (add-hook 'php-mode-hook (lambda () (flymake-mode 1)))
 
+;; Fix tab complete from putting annoying spaces in gdb
+(defun my-gud-gdb-setup ()
+  (define-key (current-local-map) "\t" 'my-gud-gdb-complete-command))
+
+(defun my-gud-gdb-complete-command (&optional COMMAND PREDICATE FLAGS)
+  (interactive)
+  (unless (comint-dynamic-complete-filename)
+    (gud-gdb-complete-command COMMAND PREDICATE FLAGS)))
+
+(add-hook 'gdb-mode-hook 'my-gud-gdb-setup)
