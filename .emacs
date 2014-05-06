@@ -12,7 +12,8 @@
 (if (equal system-name "lap-e330-mb") 
     (custom-set-faces
      '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight bold :height 91 :width normal :foundry "b&h" :family "Lucida Sans Typewriter")))))
-  '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight bold :height 91 :width normal :foundry "B&H" :family "LucidaTypewriter")))))
+  (custom-set-faces
+   '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight bold :height 91 :width normal :foundry "B&H" :family "LucidaTypewriter"))))))
 
 ; C editing
 ; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
