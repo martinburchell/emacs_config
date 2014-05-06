@@ -4,6 +4,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(scroll-bar-mode (quote right))
+ '(show-paren-mode t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(vc-follow-symlinks t))
 (custom-set-faces
@@ -11,7 +12,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight bold :height 91 :width normal :foundry "B&H" :family "LucidaTypewriter")))))
+ '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight bold :height 91 :width normal :foundry "b&h" :family "Lucida Sans Typewriter")))))
 
 ; C editing
 ; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
@@ -86,6 +87,9 @@
 (add-to-list 'load-path "~/ace-jump-mode/")
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+(add-to-list 'load-path "~/markdown-mode/")
+(require 'markdown-mode)
 
 (global-set-key "\M-g" 'goto-line)
 
