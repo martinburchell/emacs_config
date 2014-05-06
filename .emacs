@@ -133,3 +133,11 @@
     (gud-gdb-complete-command COMMAND PREDICATE FLAGS)))
 
 (add-hook 'gdb-mode-hook 'my-gud-gdb-setup)
+
+;-----------;
+;;; Modes ;;;
+;-----------;
+
+;; Ido mode
+(require 'ido)
+(ido-mode 1)
