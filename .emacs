@@ -1,3 +1,11 @@
+; Some bits borrowed from https://github.com/jhamrick/emacs
+
+; path where settings files are kept
+(add-to-list 'load-path "~/.emacs.d/settings")
+
+; configure general settings
+(require 'general-settings)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -144,3 +152,4 @@
 ;; Ido mode
 (require 'ido)
 (ido-mode 1)
+
