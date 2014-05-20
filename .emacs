@@ -3,8 +3,20 @@
 ; path where settings files are kept
 (add-to-list 'load-path "~/.emacs.d/settings")
 
+;; path to where plugins are kept
+(setq plugin-path "~/.emacs.d/el-get/")
+
+(require 'cl-settings)
+
+;; define various custom functions
+(require 'custom-functions)
+
 ; configure general settings
 (require 'general-settings)
+
+;; install dependencies with el-get
+(require 'el-get-settings)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -99,8 +111,8 @@
 (require 'php-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
-(add-to-list 'load-path "~/markdown-mode/")
-(require 'markdown-mode)
+;(add-to-list 'load-path "~/markdown-mode/")
+;(require 'markdown-mode)
 
 (global-set-key "\M-g" 'goto-line)
 
@@ -153,3 +165,8 @@
 (require 'ido)
 (ido-mode 1)
 
+;; Markdown mode
+(require 'markdown-settings)
+
+;; Python mode 
+(require 'python-settings)
