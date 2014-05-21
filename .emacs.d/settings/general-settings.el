@@ -5,6 +5,6 @@
 
 (setq-default fill-column 80)
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (provide 'general-settings)
-
-
