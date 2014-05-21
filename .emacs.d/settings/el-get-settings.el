@@ -16,6 +16,7 @@
 (setq 
  my-packages '(auto-complete
 	       ein
+	       magit
                markdown-mode
 	       ))   
 

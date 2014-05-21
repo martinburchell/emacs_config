@@ -2,3 +2,5 @@
 .emacs.d/ac-comphist.dat
 .emacs.d/cl-lib
 .emacs.d/el-get
+.emacs.d/elpa/archives
+.emacs.d/elpa/cl-lib-0.5
