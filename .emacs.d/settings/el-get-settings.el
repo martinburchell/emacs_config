@@ -13,12 +13,13 @@
     (eval-print-last-sexp)))
 
 ; packages to install
-(setq 
+(setq
  my-packages '(auto-complete
-	       ein
-	       magit
+               ein
+               magit
                markdown-mode
-	       ))   
+               php-mode
+               ))
 
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
@@ -28,4 +29,3 @@
 (el-get 'sync my-packages)
 
 (provide 'el-get-settings)
-

@@ -89,8 +89,6 @@
 
 (add-to-list 'load-path "~/ace-jump-mode/")
 (require 'ace-jump-mode)
-(add-to-list 'load-path "~/php-mode/")
-(require 'php-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 (global-set-key "\M-g" 'goto-line)
