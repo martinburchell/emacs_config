@@ -61,8 +61,8 @@
   (setq indent-tabs-mode nil)
   )
 
-(add-hook 'c-mode-hook 'set-my-c-style) 
-(add-hook 'c++-mode-hook 'set-my-c-style) 
+(add-hook 'c-mode-hook 'set-my-c-style)
+(add-hook 'c++-mode-hook 'set-my-c-style)
 
 (require 'uniquify)
 
@@ -93,16 +93,13 @@
 (require 'php-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
-;(add-to-list 'load-path "~/markdown-mode/")
-;(require 'markdown-mode)
-
 (global-set-key "\M-g" 'goto-line)
 
 (defun split-horizontally-for-temp-buffers ()
        "Split the window horizontally for temp buffers."
        (when (and (one-window-p t)
      	     (not (active-minibuffer-window)))
-         (split-window-horizontally)))    
+         (split-window-horizontally)))
 
 
 (setq show-paren-mode t)
@@ -115,7 +112,7 @@
 	 (local (file-relative-name temp (file-name-directory buffer-file-name))))
     (list "php" (list "-f" local "-l"))))
 
-(add-to-list 'flymake-err-line-patterns 
+(add-to-list 'flymake-err-line-patterns
   '("\\(Parse\\|Fatal\\) error: +\\(.*?\\) in \\(.*?\\) on line \\([0-9]+\\)$" 3 4 nil 2))
 
 (add-to-list 'flymake-allowed-file-name-masks '("\\.php$" flymake-php-init))
@@ -150,12 +147,12 @@
 ;; Markdown mode
 (require 'markdown-settings)
 
-;; Python mode 
+;; Python mode
 (require 'python-settings)
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
 ;; custom-set-faces and custom-set-variables)
-(load 
+(load
  (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
  'noerror)
