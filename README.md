@@ -12,6 +12,6 @@ I've borrowed quite a lot from Jessica Hamrick https://github.com/jhamrick/emacs
 
 ## Installation
 
-Create symbolic links to .emacs and .emacs.d from your home directory.
-Copy the pycheckers script to somewhere on your path and make it executable
-Start Emacs
+* Create symbolic links to .emacs and .emacs.d from your home directory.
+* Copy the pycheckers script to somewhere on your path and make it executable.
+* Start Emacs
