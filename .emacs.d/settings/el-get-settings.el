@@ -14,7 +14,8 @@
 
 ; packages to install
 (setq
- my-packages '(auto-complete
+ my-packages '(ace-jump-mode
+               auto-complete
                ein
                magit
                markdown-mode

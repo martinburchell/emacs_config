@@ -87,10 +87,6 @@
 (global-set-key [C-tab] 'other-window)
 (setq x-select-enable-clipboard t)
 
-(add-to-list 'load-path "~/ace-jump-mode/")
-(require 'ace-jump-mode)
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-
 (global-set-key "\M-g" 'goto-line)
 
 (defun split-horizontally-for-temp-buffers ()
@@ -138,6 +134,9 @@
 ;;; Modes ;;;
 ;-----------;
 
+;; Ace jump mode
+(require 'ace-jump-mode-settings)
+
 ;; Ido mode
 (require 'ido)
 (ido-mode 1)
@@ -147,6 +146,8 @@
 
 ;; Python mode
 (require 'python-settings)
+
+
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
