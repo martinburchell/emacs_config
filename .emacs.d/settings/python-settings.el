@@ -50,7 +50,7 @@
 (require 'ein)
 
 ; shortcut function to load notebooklist
-(defun load-ein () 
+(defun load-ein ()
   (ein:notebooklist-load)
   (interactive)
   (ein:notebooklist-open))
@@ -72,7 +72,8 @@
 ;; (require 'jedi)
 ;; (setq jedi:setup-keys t)
 ;; (autoload 'jedi:setup "jedi" nil t)
-;; (add-hook 'python-mode-hook 'jedi:setup)
+(add-hook 'python-mode-hook 'jedi:setup)
+;; (setq jedi:complete-on-dot t)
 
 ;; pyflakes flymake integration
 ;; http://stackoverflow.com/a/1257306/347942
@@ -98,7 +99,7 @@
 (if window-system (set-python-path-from-shell-PYTHONPATH))
 
 (setq auto-mode-alist
-      (append 
+      (append
        (list '("\\.pyx" . python-mode))
        auto-mode-alist))
 
@@ -109,4 +110,3 @@
   '(define-key python-mode-map (kbd "C-c |") 'python-shell-send-region))
 
 (provide 'python-settings)
-

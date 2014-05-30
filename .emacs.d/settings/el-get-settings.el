@@ -17,6 +17,7 @@
  my-packages '(ace-jump-mode
                auto-complete
                ein
+               jedi
                magit
                markdown-mode
                php-mode
