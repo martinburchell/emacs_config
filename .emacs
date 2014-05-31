@@ -89,6 +89,14 @@
 
 (global-set-key "\M-g" 'goto-line)
 
+
+(define-key input-decode-map "\e[1;2D" [S-left])
+(define-key input-decode-map "\e[1;2C" [S-right])
+(define-key input-decode-map "\e[1;2B" [S-down])
+(define-key input-decode-map "\e[1;2A" [S-up])
+(define-key input-decode-map "\e[1;2F" [S-end])
+(define-key input-decode-map "\e[1;2H" [S-home])
+
 (defun split-horizontally-for-temp-buffers ()
        "Split the window horizontally for temp buffers."
        (when (and (one-window-p t)
