@@ -64,16 +64,11 @@
 ;;(include-plugin "pydoc-info-0.2")
 ;;(require 'pydoc-info)
 
-;; ; jedi python completion
-;; (include-elget-plugin "ctable")   ; required for epc
-;; (include-elget-plugin "deferred") ; required for epc
-;; (include-elget-plugin "epc")      ; required for jedi
-;; (include-elget-plugin "jedi")
-;; (require 'jedi)
-;; (setq jedi:setup-keys t)
-;; (autoload 'jedi:setup "jedi" nil t)
+;; jedi python completion
 (add-hook 'python-mode-hook 'jedi:setup)
-;; (setq jedi:complete-on-dot t)
+
+(when (load "jedi" t)
+  (define-key jedi-mode-map (kbd "<C-tab>") nil))
 
 ;; pyflakes flymake integration
 ;; http://stackoverflow.com/a/1257306/347942
