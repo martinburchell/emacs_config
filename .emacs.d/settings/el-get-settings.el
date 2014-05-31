@@ -19,6 +19,7 @@
                ein
                flymake-cursor
                jedi
+               js2-mode
                magit
                markdown-mode
                php-mode
