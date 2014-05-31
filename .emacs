@@ -142,6 +142,9 @@
 (require 'ido)
 (ido-mode 1)
 
+;; Javascript
+(require 'javascript-settings)
+
 ;; Markdown mode
 (require 'markdown-settings)
 
