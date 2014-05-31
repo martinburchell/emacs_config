@@ -17,6 +17,7 @@
  my-packages '(ace-jump-mode
                auto-complete
                ein
+               flycheck
                flymake-cursor
                jedi
                js2-mode
