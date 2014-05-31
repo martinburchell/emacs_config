@@ -99,6 +99,7 @@
 (setq show-paren-mode t)
 
 (require 'flymake)
+(require 'flymake-cursor)
 
 (defun flymake-php-init ()
   "Use php to check the syntax of the current file."

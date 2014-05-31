@@ -17,6 +17,7 @@
  my-packages '(ace-jump-mode
                auto-complete
                ein
+               flymake-cursor
                jedi
                magit
                markdown-mode
