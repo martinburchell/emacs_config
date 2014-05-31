@@ -16,6 +16,7 @@
 (setq
  my-packages '(ace-jump-mode
                auto-complete
+               color-theme-solarized
                ein
                flycheck
                flymake-cursor
@@ -24,6 +25,7 @@
                magit
                markdown-mode
                php-mode
+               sublime-themes
                ))
 
 ; first enable shallow clone, so we don't need to clone the entire
