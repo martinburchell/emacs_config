@@ -20,6 +20,7 @@
                ein
                flycheck
                flymake-cursor
+               geben
                jedi
                js2-mode
                magit
@@ -32,7 +33,9 @@
 ; history of every project
 (setq el-get-git-shallow-clone t)
 
-; then intsall!
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+
+; then install!
 (el-get 'sync my-packages)
 
 (provide 'el-get-settings)
