@@ -6,6 +6,9 @@
 ; always use spaces, not tabs, when indenting
 (setq-default indent-tabs-mode nil)
 
+; and if we do, display tabs as four spaces
+(setq-default tab-width 4)
+
 (setq-default fill-column 80)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
