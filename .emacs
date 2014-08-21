@@ -150,6 +150,16 @@
 
 (add-hook 'gdb-mode-hook 'my-gud-gdb-setup)
 
+;---------------;
+;;; Utilities ;;;
+;---------------;
+
+;; Auto complete
+(require 'auto-complete-settings)
+
+;; Geben
+(require 'geben-settings)
+
 ;-----------;
 ;;; Modes ;;;
 ;-----------;
@@ -170,7 +180,8 @@
 ;; Python mode
 (require 'python-settings)
 
-
+;; Web mode
+(require 'web-mode-settings)
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
