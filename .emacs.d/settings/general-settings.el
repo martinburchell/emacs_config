@@ -11,6 +11,9 @@
 
 (setq-default fill-column 80)
 
+(setq line-number-mode t)
+(setq column-number-mode t)
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ; Create any missing directories
