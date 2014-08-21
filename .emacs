@@ -57,7 +57,7 @@
 
 (defun set-my-c-style ()
   (c-add-style "my-c-style" my-c-style t)
-  (setq tab-width 8)
+  (setq tab-width 4)
   (setq indent-tabs-mode nil)
   )
 
