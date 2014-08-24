@@ -11,11 +11,11 @@
 ;; define various custom functions
 (require 'custom-functions)
 
-; configure general settings
-(require 'general-settings)
-
 ;; install dependencies with el-get
 (require 'el-get-settings)
+
+; configure general settings
+(require 'general-settings)
 
 ; C editing
 ; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
