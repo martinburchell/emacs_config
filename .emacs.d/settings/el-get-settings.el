@@ -26,6 +26,7 @@
                magit
                markdown-mode
                php-mode
+               sass-mode
                sublime-themes
                web-mode
                ))
