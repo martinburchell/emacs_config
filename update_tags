@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ "$#" != "1" ]; then
+    echo "Usage $0 <source_dir>"
+    exit 1
+fi
+
+source_dir=$1
+tags_file=TAGS
+temp_tags_file=temp_tags
+
+cd $source_dir
+
+find . -name '*.php' -or -name '*.py' -or -name '*.c' -or -name '*.java' -print0 | while IFS= read -r -d '' source_file; do
+    etags -o $temp_tags_file -a "$source_file"
+done
+
+cp $temp_tags_file $tags_file
+rm $temp_tags_file
