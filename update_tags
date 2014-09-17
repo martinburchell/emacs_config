@@ -11,7 +11,7 @@ temp_tags_file=temp_tags
 
 cd $source_dir
 
-find . -name '*.php' -or -name '*.py' -or -name '*.c' -or -name '*.java' -print0 | while IFS= read -r -d '' source_file; do
+find . \( -name '*.php' -or -name '*.py' -or -name '*.c' -or -name '*.java' \) -print0 | while IFS= read -r -d '' source_file; do
     etags -o $temp_tags_file -a "$source_file"
 done
 
