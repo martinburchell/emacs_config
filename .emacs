@@ -177,6 +177,9 @@
 ;; Markdown mode
 (require 'markdown-settings)
 
+;; Midnight mode
+(require 'midnight-settings)
+
 ;; Python mode
 (require 'python-settings)
 
