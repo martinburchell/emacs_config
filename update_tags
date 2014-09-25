@@ -7,7 +7,7 @@ fi
 
 source_dir=$1
 tags_file=TAGS
-temp_tags_file=temp_tags
+temp_tags_file=${tags_file}.tmp
 
 cd $source_dir
 
