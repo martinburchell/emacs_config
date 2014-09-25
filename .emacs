@@ -116,8 +116,6 @@
 (require 'flymake)
 (require 'flymake-cursor)
 
-(add-hook 'php-mode-hook (lambda () (flymake-mode 1)))
-
 (require 'flycheck)
 (add-hook 'js-mode-hook
           (lambda () (flycheck-mode t)))
@@ -162,6 +160,9 @@
 
 ;; Midnight mode
 (require 'midnight-settings)
+
+;; PHP mode
+(require 'php-settings)
 
 ;; Python mode
 (require 'python-settings)
