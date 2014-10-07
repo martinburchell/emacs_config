@@ -20,6 +20,8 @@
                ein
                flycheck
                flymake-cursor
+               flymake-easy
+               flymake-phpcs
                geben
                jedi
                js2-mode
