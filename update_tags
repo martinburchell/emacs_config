@@ -11,9 +11,18 @@ temp_tags_file=${tags_file}.tmp
 
 cd $source_dir
 
+if [ ! -f $tags_file ]; then
+    touch $tags_file
+fi
+
 find . \( -name '*.php' -or -name '*.py' -or -name '*.c' -or -name '*.java' \) -print0 | while IFS= read -r -d '' source_file; do
     etags -o $temp_tags_file -a "$source_file"
 done
 
-cp $temp_tags_file $tags_file
+diff $temp_tags_file $tags_file
+
+if [ "$?" != "0" ]; then
+    cp $temp_tags_file $tags_file
+fi
+
 rm $temp_tags_file
