@@ -67,4 +67,18 @@
 (global-set-key [f8] 'copy-to-clipboard)
 (global-set-key [f9] 'paste-from-clipboard)
 
+; http://stackoverflow.com/questions/14095189/walk-up-the-directory-tree
+(defun parent-directory (dir)
+  (unless (equal "/" dir)
+    (file-name-directory (directory-file-name dir))))
+
+(defun find-file-in-hierarchy (current-dir fname)
+  "Search for a file named FNAME upwards through the directory hierarchy, starting from CURRENT-DIR"
+  (let ((file (concat current-dir fname))
+        (parent (parent-directory (expand-file-name current-dir))))
+    (if (file-exists-p file)
+        file
+      (when parent
+        (find-file-in-hierarchy parent fname)))))
+
 (provide 'custom-functions)
