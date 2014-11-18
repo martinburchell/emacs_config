@@ -19,7 +19,7 @@ find . \( -name '*.php' -or -name '*.py' -or -name '*.c' -or -name '*.java' \) -
     etags -o $temp_tags_file -a "$source_file"
 done
 
-diff $temp_tags_file $tags_file
+diff $temp_tags_file $tags_file >> /dev/null
 
 if [ "$?" != "0" ]; then
     cp $temp_tags_file $tags_file
