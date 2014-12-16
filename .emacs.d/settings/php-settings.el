@@ -1,6 +1,6 @@
 (defun set-up-wordpress ()
   (php-enable-wordpress-coding-style)
-  (set (make-local-variable 'flymake-phpcs-standard) "WordPress")
+  (set (make-local-variable 'flymake-phpcs-standard) "WordPress-Core")
 )
 
 (defun set-up-pear ()
