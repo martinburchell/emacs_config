@@ -9,6 +9,8 @@ I've borrowed quite a lot from Jessica Hamrick https://github.com/jhamrick/emacs
 * makeinfo (Fedora package texinfo)
 * pyflakes
 * pep8 (Fedora package python-pep8)
+* PHP_CodeSniffer https://github.com/squizlabs/PHP_CodeSniffer
+* WordPress-Coding-Standards https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
 
 ## Installation
 

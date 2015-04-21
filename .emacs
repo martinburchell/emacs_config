@@ -103,6 +103,8 @@
 (define-key input-decode-map "\e[1;5D" [C-left])
 (define-key input-decode-map "\e[1~" [C-home])
 (define-key input-decode-map "\e[4~" [C-end])
+(define-key input-decode-map "\e[1;5H" [C-home])
+(define-key input-decode-map "\e[1;5F" [C-end])
 
 (defun split-horizontally-for-temp-buffers ()
        "Split the window horizontally for temp buffers."

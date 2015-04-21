@@ -26,6 +26,7 @@
                geben
                jedi
                js2-mode
+               let-alist
                magit
                markdown-mode
                php-mode
