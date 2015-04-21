@@ -18,6 +18,7 @@
                auto-complete
                color-theme-solarized
                ein
+               emacs-w3m
                flycheck
                flymake-cursor
                flymake-easy
