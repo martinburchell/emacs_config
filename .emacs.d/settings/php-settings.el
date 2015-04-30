@@ -1,17 +1,17 @@
 (defun set-up-wordpress ()
   (php-enable-wordpress-coding-style)
-  (set (make-local-variable 'flymake-phpcs-standard) "WordPress-Core")
+  (set (make-local-variable 'flycheck-phpcs-standard) "WordPress-Core")
 )
 
 (defun set-up-pear ()
   (php-enable-pear-coding-style)
-  (set (make-local-variable 'flymake-phpcs-standard) "PEAR")
+  (set (make-local-variable 'flycheck-phpcs-standard) "PEAR")
 )
 
 (defun set-up-coding-style ()
-  (flymake-mode 1)
+  (flycheck-select-checker 'php-phpcs)
+  (flycheck-mode 1)
   (c-set-style "linux")
-  (flymake-phpcs-load)
 
   (let ((file (find-file-in-hierarchy (buffer-file-name) "wp-config.php")))
     (if file
