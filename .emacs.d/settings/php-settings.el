@@ -9,7 +9,8 @@
 )
 
 (defun set-up-coding-style ()
-  (flycheck-select-checker 'php-phpcs)
+  (setq flycheck-phpmd-rulesets '("cleancode" "codesize" "design" "naming" "unusedcode"))
+  (flycheck-add-next-checker 'php 'php-phpmd 'php-phpcs)
   (flycheck-mode 1)
   (c-set-style "linux")
 
