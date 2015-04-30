@@ -1,6 +1,0 @@
-(:name let-alist
-       :website "http://elpa.gnu.org/packages/let-alist.html"
-       :description "Easily let-bind values of an assoc-list by their names"
-       :type elpa
-       :builtin "25")
-
