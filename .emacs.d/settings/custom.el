@@ -14,9 +14,10 @@
 ; color theme
 (add-to-list 'custom-theme-load-path (make-plugin-path "color-theme-solarized"))
 (add-to-list 'custom-theme-load-path (make-plugin-path "sublime-themes"))
-(load-theme 'solarized-dark 1)
 (setq solarized-termcolors 256)
+(setq solarized-default-background-mode 'dark)
 
+(load-theme 'solarized t)
 
 
 (custom-set-faces
