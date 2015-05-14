@@ -31,5 +31,6 @@
 (add-hook 'before-save-hook 'my-before-save-hook)
 
 (desktop-save-mode 1)
+(menu-bar-mode -1)
 
 (provide 'general-settings)
