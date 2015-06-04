@@ -17,6 +17,7 @@
  my-packages '(ace-jump-mode
                auto-complete
                color-theme-solarized
+               doxymacs
                ein
                emacs-w3m
                flycheck
