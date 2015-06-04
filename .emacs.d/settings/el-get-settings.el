@@ -27,6 +27,7 @@
                js2-mode
                magit
                markdown-mode
+               php-eldoc
                php-mode
                sass-mode
                sublime-themes
