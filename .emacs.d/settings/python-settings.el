@@ -86,6 +86,9 @@
 	  (lambda ()
 	    (unless (eq buffer-file-name nil) (flymake-mode 1))))
 
+(add-hook 'python-mode-hook
+  (lambda () (setq python-indent-offset 4)))
+
 ; Set PYTHONPATH, because we don't load .bashrc
 (defun set-python-path-from-shell-PYTHONPATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PYTHONPATH'")))
