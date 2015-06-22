@@ -115,9 +115,6 @@
 
 (setq show-paren-mode t)
 
-(require 'flymake)
-(require 'flymake-cursor)
-
 (require 'flycheck)
 (add-hook 'js-mode-hook
           (lambda () (flycheck-mode t)))

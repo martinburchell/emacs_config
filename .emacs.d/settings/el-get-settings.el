@@ -21,8 +21,6 @@
                ein
                emacs-w3m
                flycheck
-               flymake-cursor
-               flymake-easy
                geben
                jedi
                js2-mode
