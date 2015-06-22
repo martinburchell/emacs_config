@@ -115,10 +115,6 @@
 
 (setq show-paren-mode t)
 
-(require 'flycheck)
-(add-hook 'js-mode-hook
-          (lambda () (flycheck-mode t)))
-
 ;; Fix tab complete from putting annoying spaces in gdb
 (defun my-gud-gdb-setup ()
   (define-key (current-local-map) "\t" 'my-gud-gdb-complete-command))
