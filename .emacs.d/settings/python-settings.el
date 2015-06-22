@@ -70,21 +70,19 @@
 (when (load "jedi" t)
   (define-key jedi-mode-map (kbd "<C-tab>") nil))
 
-;; pyflakes flymake integration
-;; http://stackoverflow.com/a/1257306/347942
-(when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-           (local-file (file-relative-name
-                        temp-file
-                        (file-name-directory buffer-file-name))))
-      (list "pycheckers" (list local-file))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
-(add-hook 'python-mode-hook
-	  (lambda ()
-	    (unless (eq buffer-file-name nil) (flymake-mode 1))))
+;; http://www.lunaryorn.com/2013/11/26/syntax-checker-executables-in-flycheck.html
+(defun flycheck-python-set-executables ()
+  (let ((exec-path (python-shell-calculate-exec-path)))
+    (setq flycheck-python-pylint-executable (executable-find "pylint")
+          flycheck-python-flake8-executable (executable-find "flake8")))
+  ;; Force Flycheck mode on
+  (flycheck-mode))
+
+(defun flycheck-python-setup ()
+  (add-hook 'hack-local-variables-hook #'flycheck-python-set-executables
+            nil 'local))
+
+(add-hook 'python-mode-hook #'flycheck-python-setup)
 
 (add-hook 'python-mode-hook
   (lambda () (setq python-indent-offset 4)))
