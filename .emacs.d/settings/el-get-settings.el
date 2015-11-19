@@ -15,6 +15,7 @@
 ; packages to install
 (setq
  my-packages '(ace-jump-mode
+               apache-mode
                auto-complete
                color-theme-solarized
                doxymacs
