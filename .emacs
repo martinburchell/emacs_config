@@ -150,6 +150,9 @@
 ;; Javascript
 (require 'javascript-settings)
 
+;; Magit
+(require 'magit-settings)
+
 ;; Markdown mode
 (require 'markdown-settings)
 
