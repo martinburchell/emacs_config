@@ -165,6 +165,9 @@
 ;; Python mode
 (require 'python-settings)
 
+;; SCSS mode
+(require 'scss-settings)
+
 ;; Web mode
 (require 'web-mode-settings)
 

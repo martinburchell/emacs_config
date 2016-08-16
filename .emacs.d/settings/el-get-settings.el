@@ -23,13 +23,14 @@
                emacs-w3m
                flycheck
                geben
+               haml-mode
                jedi
                js2-mode
                magit
                markdown-mode
                php-eldoc
                php-mode
-               sass-mode
+               scss-mode
                sublime-themes
                web-mode
                ))
