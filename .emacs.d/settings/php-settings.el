@@ -23,6 +23,5 @@
 )
 
 (add-hook 'php-mode-hook 'set-up-coding-style)
-(add-hook 'php-mode-hook 'doxymacs-mode)
 
 (provide 'php-settings)
