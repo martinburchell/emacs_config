@@ -12,7 +12,6 @@
   (setq flycheck-phpmd-rulesets '("cleancode" "codesize" "design" "naming" "unusedcode"))
   (flycheck-add-next-checker 'php 'php-phpmd 'php-phpcs)
   (flycheck-mode 1)
-  (c-set-style "linux")
 
   (let ((file (find-file-in-hierarchy (buffer-file-name) "wp-config.php")))
     (if file
