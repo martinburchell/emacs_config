@@ -83,6 +83,7 @@
             nil 'local))
 
 (add-hook 'python-mode-hook #'flycheck-python-setup)
+(add-hook 'python-mode-hook #'flycheck-virtualenv-setup)
 
 (add-hook 'python-mode-hook
   (lambda () (setq python-indent-offset 4)))

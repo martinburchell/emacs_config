@@ -29,6 +29,7 @@
                markdown-mode
                php-eldoc
                php-mode
+               pyvenv
                scss-mode
                sublime-themes
                web-mode

@@ -147,6 +147,9 @@
 (require 'ido)
 (ido-mode 1)
 
+;; Flycheck virtualenv
+(require 'flycheck-virtualenv)
+
 ;; Javascript
 (require 'javascript-settings)
 
