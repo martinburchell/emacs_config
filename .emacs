@@ -143,6 +143,9 @@
 ;; Ace jump mode
 (require 'ace-jump-mode-settings)
 
+;; C++
+(require 'c++-settings)
+
 ;; Ido mode
 (require 'ido)
 (ido-mode 1)
