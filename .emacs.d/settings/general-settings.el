@@ -11,6 +11,13 @@
 
 (setq-default fill-column 80)
 
+; https://emacs.stackexchange.com/questions/147/how-can-i-get-a-ruler-at-column-80
+(setq-default
+ whitespace-line-column 80
+  whitespace-style '(face lines-tail))
+
+(add-hook 'prog-mode-hook #'whitespace-mode)
+
 (setq line-number-mode t)
 (setq column-number-mode t)
 
