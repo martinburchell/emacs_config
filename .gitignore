@@ -10,3 +10,5 @@
 .emacs.d/.python-environments
 .emacs.d/ido.last
 .emacs.d/transient/
+.emacs.d/bookmarks
+.emacs.d/url
