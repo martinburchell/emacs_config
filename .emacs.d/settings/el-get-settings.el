@@ -30,6 +30,7 @@
                php-eldoc
                php-mode
                pyvenv
+               rtags
                scss-mode
                sublime-themes
                web-mode
