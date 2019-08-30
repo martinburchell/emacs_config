@@ -17,6 +17,9 @@
 ; configure general settings
 (require 'general-settings)
 
+; configure compilation settings
+(require 'compilation-settings)
+
 ; C editing
 ; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
 ;  (c-set-style "Whitesmith"))
