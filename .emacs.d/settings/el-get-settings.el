@@ -15,6 +15,7 @@
 ; packages to install
 (setq
  my-packages '(ace-jump-mode
+               ag
                apache-mode
                auto-complete
                color-theme-solarized
