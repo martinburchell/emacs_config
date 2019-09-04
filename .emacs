@@ -20,6 +20,9 @@
 ; configure compilation settings
 (require 'compilation-settings)
 
+; configure whitespace settings
+(require 'whitespace-settings)
+
 ; C editing
 ; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
 ;  (c-set-style "Whitesmith"))

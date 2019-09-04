@@ -22,9 +22,6 @@
 (setq column-number-mode t)
 
 (defun my-before-save-hook ()
-  (when (not (string-equal buffer-file-name (expand-file-name "~/signature.txt" )))
-    (delete-trailing-whitespace))
-
   ; Create any missing directories
   (when buffer-file-name
     (let ((dir (file-name-directory buffer-file-name)))
