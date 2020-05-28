@@ -30,53 +30,6 @@
 ; configure whitespace settings
 (require 'whitespace-settings)
 
-; C editing
-; (defun whitesmith-c-mode-common-hook () "Set default C style to Whitesmith."
-;  (c-set-style "Whitesmith"))
-; (setq c-mode-common-hook 'whitesmith-c-mode-common-hook)
-
-(defconst my-c-style
-  '(
-    (c-basic-offset . 4)
-    (c-comment-only-line-offset . 0)
-     (c-offsets-alist . ((knr-argdecl-intro . +)
-             (label . 0)
-             (statement-cont . +)
-             (substatement-open . 0)
-             (block-open . 0)
-             (statement-block-intro . +)
-             (block-close . c-lineup-whitesmith-in-block)
-             (inline-open . +)
-             (defun-open . 0)
-             (defun-block-intro . +)
-             (defun-close . c-lineup-whitesmith-in-block)
-             (brace-list-open . 0)
-             (brace-list-intro . +)
-             (brace-entry-open . c-indent-multi-line-block)
-             (brace-list-close . c-lineup-whitesmith-in-block)
-             (class-open . 0)
-             (inclass . +)
-             (class-close . -)
-             (inexpr-class . 0)
-             (extern-lang-open . +)
-             (inextern-lang . c-lineup-whitesmith-in-block)
-             (extern-lang-close . +)
-             (namespace-open . +)
-             (innamespace . c-lineup-whitesmith-in-block)
-             (namespace-close . +)
-             ))
-     )
-  "My programming style")
-
-(defun set-my-c-style ()
-  (c-add-style "my-c-style" my-c-style t)
-  (setq tab-width 4)
-  (setq indent-tabs-mode nil)
-  )
-
-(add-hook 'c-mode-hook 'set-my-c-style)
-(add-hook 'c++-mode-hook 'set-my-c-style)
-
 (require 'uniquify)
 
 (defun pi-gdb () "gdb for palm"
@@ -155,6 +108,9 @@
 
 ;; Ace jump mode
 (require 'ace-jump-mode-settings)
+
+;; C
+(require 'c-settings)
 
 ;; C++
 (require 'c++-settings)

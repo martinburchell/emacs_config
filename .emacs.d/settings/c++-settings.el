@@ -8,7 +8,13 @@
   "Configure flycheck-rtags for better experience."
   (flycheck-select-checker 'rtags)
   (setq-local flycheck-check-syntax-automatically nil)
-  (setq-local flycheck-highlighting-mode nil))
+  (setq-local flycheck-highlighting-mode nil)
+
+  (setq c-default-style "k&r" c-basic-offset 4)
+)
+
+
+
 (add-hook 'c++-mode-hook #'my-cpp-setup)
 
 (provide 'c++-settings)
