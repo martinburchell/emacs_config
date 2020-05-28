@@ -96,6 +96,9 @@
 ;;; Utilities ;;;
 ;---------------;
 
+;; silver searcher settings
+(require 'ag-settings)
+
 ;; Auto complete
 (require 'auto-complete-settings)
 
