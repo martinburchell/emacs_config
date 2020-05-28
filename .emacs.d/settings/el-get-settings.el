@@ -23,10 +23,14 @@
                emacs-w3m
                flycheck
                geben
+               ghub
+               git-timemachine
+               graphql
                haml-mode
                jedi
                js2-mode
                magit
+               magit-popup
                markdown-mode
                php-eldoc
                php-mode
@@ -34,6 +38,7 @@
                rtags
                scss-mode
                sublime-themes
+               transient
                web-mode
                ))
 
