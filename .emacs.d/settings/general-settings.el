@@ -38,4 +38,7 @@
 (desktop-save-mode 1)
 (menu-bar-mode -1)
 
+(put 'flycheck-python-flake8-executable 'safe-local-variable #'stringp)
+(put 'flycheck-python-mypy-executable 'safe-local-variable #'stringp)
+
 (provide 'general-settings)
