@@ -121,6 +121,9 @@
 (require 'ido)
 (ido-mode 1)
 
+;; Java
+(require 'java-settings)
+
 ;; Javascript
 (require 'javascript-settings)
 
