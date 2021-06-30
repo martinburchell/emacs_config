@@ -39,6 +39,7 @@
                scss-mode
                sublime-themes
                transient
+               virtualenvwrapper
                web-mode
                ))
 
