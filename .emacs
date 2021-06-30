@@ -30,6 +30,9 @@
 ; configure whitespace settings
 (require 'whitespace-settings)
 
+; virtualenvwrapper settings
+(require 'virtualenvwrapper-settings)
+
 (require 'uniquify)
 
 (defun pi-gdb () "gdb for palm"
