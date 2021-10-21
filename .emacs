@@ -148,6 +148,9 @@
 ;; Web mode
 (require 'web-mode-settings)
 
+;; YAML mode
+(require 'yaml-mode-settings)
+
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
 ;; custom-set-faces and custom-set-variables)
