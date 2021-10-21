@@ -34,6 +34,7 @@
                markdown-mode
                php-eldoc
                php-mode
+               python-black
                pyvenv
                rtags
                scss-mode
