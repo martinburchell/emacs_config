@@ -6,6 +6,12 @@ I've borrowed quite a lot from Jessica Hamrick https://github.com/jhamrick/emacs
 
 ## Installation (Ubuntu 20.04)
 
+Add to `.profile`:
+
+```
+export WORKON_HOME=$HOME/.local/share/virtualenv
+```
+
 ```
 sudo apt-get install emacs autoconf build-essential cmake texinfo llvm libclang-dev zlib1g-dev
 git clone git@github.com:martinburchell/emacs_config.git
