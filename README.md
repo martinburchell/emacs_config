@@ -18,5 +18,7 @@ git clone git@github.com:martinburchell/emacs_config.git
 cd
 ln -s ~/emacs_config/.emacs
 ln -s ~/emacs_config/.emacs.d
+cd ~/bin
+ln -s ~/emacs_config/update-ag-ignore.py
 emacs -nw
 ```
