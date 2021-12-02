@@ -9,7 +9,7 @@ I've borrowed quite a lot from Jessica Hamrick https://github.com/jhamrick/emacs
 Add to `.profile`:
 
 ```
-export WORKON_HOME=$HOME/.local/share/virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
 ```
 
 ```
