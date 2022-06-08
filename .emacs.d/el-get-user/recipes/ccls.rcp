@@ -1,0 +1,6 @@
+(:name ccls
+       :description "ccls client for lsp-mode"
+       :website "https://github.com/MaskRay/ccls/wiki/Emacs"
+       :features ccls
+       :type elpa
+       :repo ("melpa" . "http://melpa.org/packages/"))
