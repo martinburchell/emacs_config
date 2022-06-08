@@ -21,7 +21,6 @@
                ccls
                color-theme-solarized
                ein
-               emacs-w3m
                flycheck
                geben
                ghub
