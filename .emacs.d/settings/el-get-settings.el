@@ -18,6 +18,7 @@
                ag
                apache-mode
                auto-complete
+               ccls
                color-theme-solarized
                ein
                emacs-w3m
@@ -29,6 +30,8 @@
                haml-mode
                jedi
                js2-mode
+               lsp-mode
+               lsp-ui
                magit
                magit-popup
                markdown-mode
@@ -36,7 +39,6 @@
                php-mode
                python-black
                pyvenv
-               rtags
                scss-mode
                sublime-themes
                transient
