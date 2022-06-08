@@ -50,4 +50,6 @@
 (eval-after-load 'python
   '(define-key python-mode-map (kbd "C-c |") 'python-shell-send-region))
 
+(setq python-black-extra-args '("--line-length=79"))
+
 (provide 'python-settings)
