@@ -33,4 +33,5 @@
  '(ediff-current-diff-B ((t (:background "#335533" :foreground "white"))))
  '(ediff-even-diff-A ((t (:background "light grey" :foreground "black"))))
  '(ediff-even-diff-B ((t (:background "Grey" :foreground "black"))))
- '(ediff-odd-diff-B ((t (:background "light grey" :foreground "black")))))
+ '(ediff-odd-diff-B ((t (:background "light grey" :foreground "black"))))
+ '(font-lock-doc-face ((t (:foreground "green" :slant italic)))))
