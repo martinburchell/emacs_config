@@ -2,20 +2,20 @@
 
 ; path where settings files are kept
 
-(package-initialize)
+;; path to where plugins are kept
+(setq plugin-path "~/.emacs.d/el-get/")
 
 (add-to-list 'load-path "~/.emacs.d/settings")
 
-;; path to where plugins are kept
-(setq plugin-path "~/.emacs.d/el-get/")
+;; install dependencies with el-get
+(require 'el-get-settings)
+
+(package-initialize)
 
 (require 'cl-settings)
 
 ;; define various custom functions
 (require 'custom-functions)
-
-;; install dependencies with el-get
-(require 'el-get-settings)
 
 ; configure general settings
 (require 'general-settings)
