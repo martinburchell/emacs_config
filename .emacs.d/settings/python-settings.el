@@ -24,7 +24,9 @@
   (define-key jedi-mode-map (kbd "<C-tab>") nil))
 
 (defun flycheck-python-setup ()
-  (flycheck-mode)
+  (setq-default flycheck-disabled-checkers '(python-mypy python-pycompile python-pylint python-pyright))
+  (flycheck-select-checker 'python-flake8)
+  (flycheck-mode t)
 )
 
 (add-hook 'python-mode-hook #'flycheck-python-setup)
