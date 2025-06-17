@@ -11,6 +11,21 @@
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" ".ve")))
  '(linum-format " %7i ")
+ '(package-selected-packages (quote (compat ccls)))
+ '(safe-local-variable-values
+   (quote
+    ((eval ignore-errors "Write-contents-functions is a buffer-local alternative to before-save-hook"
+           (add-hook
+            (quote write-contents-functions)
+            (lambda nil
+              (delete-trailing-whitespace)
+              nil))
+           (require
+            (quote whitespace))
+           "Sometimes the mode needs to be toggled off and on."
+           (whitespace-mode 0)
+           (whitespace-mode 1))
+     (whitespace-style face tabs trailing lines-tail))))
  '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
