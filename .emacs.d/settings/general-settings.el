@@ -40,6 +40,5 @@
 
 (put 'flycheck-python-flake8-executable 'safe-local-variable #'stringp)
 (put 'flycheck-python-mypy-executable 'safe-local-variable #'stringp)
-(setq-default flycheck-disabled-checkers '(python-pylint))
 
 (provide 'general-settings)
