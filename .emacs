@@ -111,6 +111,9 @@
 ;; Ace jump mode
 (require 'ace-jump-mode-settings)
 
+;; Shell
+(require 'shell-settings)
+
 ;; C
 (require 'c-settings)
 
