@@ -38,6 +38,7 @@
                php-mode
                python-black
                pyvenv
+               qmake-mode
                scss-mode
                sublime-themes
                transient

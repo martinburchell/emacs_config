@@ -137,6 +137,9 @@
 ;; Python mode
 (require 'python-settings)
 
+;; qmake
+(require 'qmake-settings)
+
 ;; SCSS mode
 (require 'scss-settings)
 
